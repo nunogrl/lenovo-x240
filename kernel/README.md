@@ -1,4 +1,4 @@
-kernel
+Kernel
 ======
 
 This kernel is based on the work of Markus Demleitner and his instructions can be found at http://www.tfiu.de/x240/
@@ -24,15 +24,18 @@ TODO
 Virtual Box
 -----------
 
-    Kernel driver not installed (rc=-1908)
-    
-    The VirtualBox Linux kernel driver (vboxdrv) is either not loaded or there is a permission problem with /dev/vboxdrv. Please reinstall virtualbox-dkms package and load the kernel module by executing
-    
-    'modprobe vboxdrv'
-    
-    as root.
-    
-    where: suplibOsInit what: 3 VERR_VM_DRIVER_NOT_INSTALLED (-1908) - The support driver is not installed. On linux, open returned ENOENT. 
+Error from Virtual Box:
+
+> Kernel driver not installed (rc=-1908)
+>    
+> The VirtualBox Linux kernel driver (vboxdrv) is either not loaded or there is a permission problem with /dev/vboxdrv.
+> Please reinstall virtualbox-dkms package and load the kernel module by executing
+>    
+>     'modprobe vboxdrv'
+>    
+>    as root.
+>    
+>    where: suplibOsInit what: 3 VERR_VM_DRIVER_NOT_INSTALLED (-1908) - The support driver is not installed. On linux, open returned ENOENT. 
     
 Docker
 ------
@@ -42,4 +45,10 @@ Information at https://docs.docker.com/engine/installation/linux/linux-postinsta
 Soundcard
 ---------
 
-fix for pulseaudio
+Fix for pulseaudio
+
+
+Power Management
+----------------
+
+Fix for suspend
